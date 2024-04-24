@@ -151,6 +151,11 @@ def main(args):
 
     if args.eval_only:
         model = Trainer.build_model(cfg)
+        from fvcore.nn.parameter_count import parameter_count_table
+        print(parameter_count_table(model, max_depth=10))
+
+        # import time
+        # time.sleep(1000)
         DetectionCheckpointer(model, save_dir=cfg.OUTPUT_DIR).resume_or_load(
             cfg.MODEL.WEIGHTS, resume=args.resume
         )

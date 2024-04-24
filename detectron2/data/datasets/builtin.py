@@ -140,6 +140,10 @@ _PREDEFINED_SPLITS_LVIS = {
         "lvis_v1_test_dev": ("coco/", "lvis/lvis_v1_image_info_test_dev.json"),
         "lvis_v1_test_challenge": ("coco/", "lvis/lvis_v1_image_info_test_challenge.json"),
     },
+    "lvis_v1_cocofied": {
+        "lvis_v1_train_cocofied": ("coco/train2017", "lvis/lvis_v1_train_cocofied.json"),
+        "lvis_v1_val_cocofied": ("coco/val2017", "lvis/lvis_v1_val_cocofied.json"),
+    },
     "lvis_v0.5": {
         "lvis_v0.5_train": ("coco/", "lvis/lvis_v0.5_train.json"),
         "lvis_v0.5_val": ("coco/", "lvis/lvis_v0.5_val.json"),
